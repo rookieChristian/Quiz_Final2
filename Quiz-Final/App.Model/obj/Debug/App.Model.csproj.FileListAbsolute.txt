@@ -1,0 +1,7 @@
+C:\Users\admin\Desktop\capstone-3_2_2015-master\Quiz-Final\App.Model\bin\Debug\App.Model.dll
+C:\Users\admin\Desktop\capstone-3_2_2015-master\Quiz-Final\App.Model\bin\Debug\App.Model.pdb
+C:\Users\admin\Desktop\capstone-3_2_2015-master\Quiz-Final\App.Model\obj\Debug\App.Model.csprojResolveAssemblyReference.cache
+C:\Users\admin\Desktop\capstone-3_2_2015-master\Quiz-Final\App.Model\obj\Debug\App.Model.Properties.Resources.resources
+C:\Users\admin\Desktop\capstone-3_2_2015-master\Quiz-Final\App.Model\obj\Debug\App.Model.csproj.GenerateResource.Cache
+C:\Users\admin\Desktop\capstone-3_2_2015-master\Quiz-Final\App.Model\obj\Debug\App.Model.dll
+C:\Users\admin\Desktop\capstone-3_2_2015-master\Quiz-Final\App.Model\obj\Debug\App.Model.pdb

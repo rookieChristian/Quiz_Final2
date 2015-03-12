@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="QuizBeeModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="AdminAccount">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Password" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="FullName" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Clincher">
+    <Key>
+      <PropertyRef Name="QuestionNumber" />
+    </Key>
+    <Property Name="QuestionNumber" Type="int" Nullable="false" />
+    <Property Name="Questions" Type="varchar(max)" Nullable="false" />
+    <Property Name="Option1" Type="varchar(max)" Nullable="false" />
+    <Property Name="Option2" Type="varchar(max)" Nullable="false" />
+    <Property Name="Option3" Type="varchar(max)" Nullable="false" />
+    <Property Name="Option4" Type="varchar(max)" Nullable="false" />
+    <Property Name="TimeFrame" Type="int" Nullable="false" />
+    <Property Name="AnswerKey" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="DifficultyLevel" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ContestantScore">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ContestantName" Type="nvarchar" MaxLength="50" />
+    <Property Name="Score" Type="int" />
+  </EntityType>
+  <EntityType Name="GContestantScore">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ContestantName" Type="nvarchar" MaxLength="50" />
+    <Property Name="Score" Type="int" />
+  </EntityType>
+  <EntityType Name="GQuiz">
+    <Key>
+      <PropertyRef Name="QuestionNumber" />
+    </Key>
+    <Property Name="QuestionNumber" Type="int" Nullable="false" />
+    <Property Name="Questions" Type="varchar(max)" Nullable="false" />
+    <Property Name="Option1" Type="varchar(max)" Nullable="false" />
+    <Property Name="Option2" Type="varchar(max)" Nullable="false" />
+    <Property Name="Option3" Type="varchar(max)" Nullable="false" />
+    <Property Name="Option4" Type="varchar(max)" Nullable="false" />
+    <Property Name="TimeFrame" Type="int" Nullable="false" />
+    <Property Name="AnswerKey" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="DifficultyLevel" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="QuizL1">
+    <Key>
+      <PropertyRef Name="QuestionNumber" />
+    </Key>
+    <Property Name="QuestionNumber" Type="int" Nullable="false" />
+    <Property Name="Questions" Type="varchar(max)" Nullable="false" />
+    <Property Name="Option1" Type="varchar(max)" Nullable="false" />
+    <Property Name="Option2" Type="varchar(max)" Nullable="false" />
+    <Property Name="Option3" Type="varchar(max)" Nullable="false" />
+    <Property Name="Option4" Type="varchar(max)" Nullable="false" />
+    <Property Name="TimeFrame" Type="int" Nullable="false" />
+    <Property Name="AnswerKey" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="DifficultyLevel" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="QuizL2">
+    <Key>
+      <PropertyRef Name="QuestionNumber" />
+    </Key>
+    <Property Name="QuestionNumber" Type="int" Nullable="false" />
+    <Property Name="Questions" Type="varchar(max)" Nullable="false" />
+    <Property Name="Option1" Type="varchar(max)" Nullable="false" />
+    <Property Name="Option2" Type="varchar(max)" Nullable="false" />
+    <Property Name="Option3" Type="varchar(max)" Nullable="false" />
+    <Property Name="Option4" Type="varchar(max)" Nullable="false" />
+    <Property Name="TimeFrame" Type="int" Nullable="false" />
+    <Property Name="AnswerKey" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="DifficultyLevel" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="QuizL3">
+    <Key>
+      <PropertyRef Name="QuestionNumber" />
+    </Key>
+    <Property Name="QuestionNumber" Type="int" Nullable="false" />
+    <Property Name="Questions" Type="varchar(max)" Nullable="false" />
+    <Property Name="Option1" Type="varchar(max)" Nullable="false" />
+    <Property Name="Option2" Type="varchar(max)" Nullable="false" />
+    <Property Name="Option3" Type="varchar(max)" Nullable="false" />
+    <Property Name="Option4" Type="varchar(max)" Nullable="false" />
+    <Property Name="TimeFrame" Type="int" Nullable="false" />
+    <Property Name="AnswerKey" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="DifficultyLevel" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="QuizBeeModelStoreContainer">
+    <EntitySet Name="AdminAccount" EntityType="Self.AdminAccount" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Clincher" EntityType="Self.Clincher" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ContestantScore" EntityType="Self.ContestantScore" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GContestantScore" EntityType="Self.GContestantScore" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GQuiz" EntityType="Self.GQuiz" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="QuizL1" EntityType="Self.QuizL1" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="QuizL2" EntityType="Self.QuizL2" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="QuizL3" EntityType="Self.QuizL3" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
